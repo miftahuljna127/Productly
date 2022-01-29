@@ -476,13 +476,6 @@
         margin-top: 10px;
         margin-left: 0 !important;
     }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-    .btn-primary, .btn-secondary {
-        margin-top: 10px;
-        margin-left: 0 !important;
-    }
 
     .contact .text-contact p {
         font-family: 'Poppins', sans-serif;
@@ -685,5 +678,13 @@
         height: 9px;
         bottom: -20px;
         left: 35px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .btn-primary, .btn-secondary {
+        margin-top: 10px;
+        margin-left: 0 !important;
     }
 }
