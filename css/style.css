@@ -40,7 +40,7 @@
 .hero h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 44px;
+    font-size: 43px;
     color: #2F281E;
 }
 
@@ -67,11 +67,13 @@
 }
 
 .feature .bground{
-    width: 100%;
-    min-height: 550px;
-    /* margin-top: 290px; */
-    background: linear-gradient(to top, rgba(255, 229, 210, .6), rgba(255, 244, 229, .01));
-    border-radius: 0 0 50% 50%;
+    position: relative;
+}
+
+.feature .bground img{
+    position: absolute;
+    z-index: -1;
+    top: 150px;
 }
 
 .feature h1 {
@@ -468,10 +470,220 @@
 }
 
 /* CUSTOM */
+@media (max-width: 768px) {
+    .btn-primary,
+    .btn-secondary {
+        margin-top: 10px;
+        margin-left: 0 !important;
+    }
+}
 
-@media (max-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     .btn-primary, .btn-secondary {
         margin-top: 10px;
         margin-left: 0 !important;
+    }
+
+    .contact .text-contact p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        color: #544837;
+    }
+
+    .effortless .icon {
+        width: 35px;
+        /* padding: 11px 9px 11px 10px; */
+        box-sizing: border-box;
+        border-radius: 13px;
+        background: #FF9900;
+    }
+
+    .contact .text-contact {
+        width: 542px;
+        text-align: center;
+        line-height: 26px;
+        border: none;
+        position: relative;
+        top: 250px;
+    }
+
+    .contact .text-contact p {
+        color: #567592;
+    }
+
+    .contact .bground {
+        width: 100%;
+        height: 750px;
+        /* margin-top: -290px; */
+        background: linear-gradient(to bottom, rgba(255, 229, 210, .6), rgba(255, 244, 229, .01));
+        border-radius: 50% 50% 0% 0%;
+    }
+
+    .avator {
+        position: relative;
+    }
+
+    .avator1 {
+        position: absolute;
+        top: 250px;
+    }
+
+    .avator2 {
+        position: absolute;
+        top: 380px;
+        right: 200px;
+    }
+
+    .avator3 {
+        position: absolute;
+        top: -70px;
+        right: 70px;
+    }
+
+    .avator4 {
+        position: absolute;
+        top: 270px;
+        right: 0px;
+    }
+
+    .avator5 {
+        position: absolute;
+        top: 2px;
+        left: 10px;
+    }
+
+    .avator1 .text-avator,
+    .avator2 .text-avator,
+    .avator3 .text-avator,
+    .avator4 .text-avator,
+    .avator5 .text-avator5 {
+        min-width: 40px;
+        min-height: 40px;
+    }
+
+    .avator1 .text-avator,
+    .avator4 .text-avator {
+        max-width: 263px;
+    }
+
+    .avator3 .text-avator,
+    .avator5 .text-avator5 {
+        max-width: 300px;
+    }
+
+    .avator2 .text-avator {
+        max-width: 361px;
+    }
+
+    .avator1 img,
+    .avator4 img {
+        display: flex;
+        margin-left: 200px;
+    }
+
+    .avator2 img {
+        display: flex;
+        margin-left: 300px;
+    }
+
+    .avator3 img {
+        display: flex;
+        margin-left: 230px;
+    }
+
+    .avator5 img {
+        display: flex;
+        /* margin-right: 500px; */
+    }
+
+    .text-avator {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        color: #2F281E;
+        display: flex;
+        background-color: #fff;
+        padding: 15px 30px;
+        border-radius: 30px;
+        margin: -10px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 1;
+        box-shadow: 0px 2px 8px -3px #567592;
+    }
+
+    .text-avator::before,
+    .text-avator::after {
+        content: "";
+        background-color: #fff;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .text-avator::before {
+        width: 17px;
+        height: 17px;
+        bottom: -8px;
+        right: 45px;
+        box-shadow: 0px 3px 5px -2px #567592;
+    }
+
+    .text-avator::after {
+        width: 9px;
+        height: 9px;
+        bottom: -20px;
+        right: 35px;
+    }
+
+    .text-avator5 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        color: #2F281E;
+        display: flex;
+        background-color: #fff;
+        padding: 15px 30px;
+        border-radius: 30px;
+        margin: -10px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 1;
+        margin-left: 40px;
+        box-shadow: 0px 2px 8px -3px #567592;
+    }
+
+    .text-avator5::before,
+    .text-avator5::after {
+        content: "";
+        background-color: #fff;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .text-avator5::before {
+        width: 17px;
+        height: 17px;
+        bottom: -8px;
+        left: 45px;
+        box-shadow: 0px 3px 5px -2px #567592;
+    }
+
+    .text-avator5::after {
+        width: 9px;
+        height: 9px;
+        bottom: -20px;
+        left: 35px;
     }
 }
